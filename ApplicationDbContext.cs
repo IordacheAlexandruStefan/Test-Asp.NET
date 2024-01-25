@@ -7,6 +7,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         : base(options)
     {
     }
-    public DbSet<User> Users { get; set; }
-    public DbSet<Test> Test { get; set; }
+    public DbSet<Eveniment> Evenimente { get; set; }
+    public DbSet<Participant> Participanti { get; set; }
+    public DbSet<ParticipaEveniment> ParticipaEveniment { get; set; }
 }
